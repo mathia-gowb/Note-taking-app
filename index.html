@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://use.fontawesome.com/81a6339b46.js"></script>
+</head>
+<body>
+    <style>
+        body{
+            padding:0;
+            margin:0
+        }
+        main{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            
+            background-image:url("./image/desk-3076954.jpg");
+            background-size:cover;
+            background-position:center;
+        }
+        .body-overlay,main{
+            height:100vh;
+            width:100%;
+        }
+        .body-overlay{
+            visibility:hidden;
+            transition:0.4s;
+            position:absolute;
+            background-color: rgba(0, 0, 0, 0.651);
+        }
+        .notes-container{
+            width:50%;
+            z-index:10
+        }
+        .control-buttons{
+            background: #D54B6C;
+            display:flex;
+            justify-content:space-between;
+            padding: 20px
+        }
+        .control-buttons button{
+            background-color:transparent;
+           
+           
+            font-size:16px
+        }
+        button{
+            color:white;
+            cursor: pointer;
+            border:none;
+        }
+        .save-button{
+            background-color:#D54B6C;
+            padding:18px 33px;
+            border-radius:30px;
+        }
+        .front-note{
+            background-color:white;
+        }
+        .note-content{
+            padding:10%
+        }
+        .note-date{
+            font-size:14px;
+        }
+        
+    </style>
+    <main>
+<div class="body-overlay">
+
+</div>
+<div class="notes-container">
+    
+    <div class="front-note">
+        <div class="control-buttons" data-role="add"><button><i class="fa fa-plus" aria-hidden="true"></i></button> <button data-role="close"><i class="fa fa-trash" aria-hidden="true"></i></button></div>
+        <div class="note-content">
+            <h1 class="note-date"> <i class="fa fa-calendar" aria-hidden="true"></i> 7 / jun / 2021</h1>
+            <p class="note-paragraph">
+               To <strong>Add</strong> a note press <i class="fa fa-plus" aria-hidden="true"></i> <br>
+                To <strong>Delete</strong> a note press <i class="fa fa-trash" aria-hidden="true"></i>
+            </p>
+            <br>
+            <button data-role="save" class="save-button">
+                SAVE
+            </button>
+        </div>
+    </div>
+</div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
