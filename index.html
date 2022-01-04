@@ -67,27 +67,41 @@
         .note-date{
             font-size:14px;
         }
-        
+        textarea{
+            width:100%;
+            border:0.5px solid rgb(224, 224, 224)
+        }
+        .back-notes{
+            background-color:white;
+            width:98%;
+            margin:auto;
+            box-shadow:0px -3px 10px 0px rgba(39, 39, 39, 0.226);
+            height: 8px;
+        }
     </style>
     <main>
 <div class="body-overlay">
 
 </div>
 <div class="notes-container">
+
     
     <div class="front-note">
-        <div class="control-buttons" data-role="add"><button><i class="fa fa-plus" aria-hidden="true"></i></button> <button data-role="close"><i class="fa fa-trash" aria-hidden="true"></i></button></div>
+        <div class="control-buttons" ><button data-role="add"><i class="fa fa-plus" aria-hidden="true">Add</i></button> <button data-role="close"><i class="fa fa-trash" aria-hidden="true">Delete</i></button></div>
         <div class="note-content">
             <h1 class="note-date"> <i class="fa fa-calendar" aria-hidden="true"></i> 7 / jun / 2021</h1>
-            <p class="note-paragraph">
-               To <strong>Add</strong> a note press <i class="fa fa-plus" aria-hidden="true"></i> <br>
-                To <strong>Delete</strong> a note press <i class="fa fa-trash" aria-hidden="true"></i>
-            </p>
+            <div class="note-text">
+                <p class="note-paragraph">
+                   To <strong>Add</strong> a note press <i class="fa fa-plus" aria-hidden="true"></i> <br>
+                    To <strong>Delete</strong> a note press <i class="fa fa-trash" aria-hidden="true"></i>
+                </p>
+            </div>
             <br>
             <button data-role="save" class="save-button">
                 SAVE
             </button>
         </div>
+
     </div>
 </div>
     </main>
